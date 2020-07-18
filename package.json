@@ -1,0 +1,12 @@
+{
+  "name": "protobuf-identifier-already-declared",
+  "version": "0.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "protobufjs": "6.10.1",
+    "typescript": "^3.9.7"
+  },
+  "scripts": {
+    "build-proto": "rm -f src/proto.js && pbjs --es6 -t static-module -w es6 -o src/proto.js proto/Example.proto && pbts -o src/proto.d.ts src/proto.js"
+  }
+}
